@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,300;0,500;0,600;1,400;1,500&display=swap');
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background-image: url(./img/background/pexels-johannes-plenio-1690355.jpg);
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.setting_language {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+.setting_language .choice_language {
+    display: flex;
+}
+
+.setting_language .choice_language img {
+    opacity: .6;
+    margin: 2px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.setting_language .choice_language .vietNam:hover img {
+    opacity: 1;
+}
+
+.setting_language .choice_language .english:hover img {
+    opacity: 1;
+}
+
+.box {
+    position: absolute;
+    margin: 0 auto;
+    top: 160px;
+    width: 300px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.73454857435387);
+    border-radius: 10px;
+}
+
+.box .avata {
+    right: 92px;
+    top: -50px;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border: 3px solid #ffffff;
+    border-radius: 60px;
+    background-image: url(./img/avata/86291437_854111121700803_776135972327784448_o.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.box .avata .overlay {
+    right: -2px;
+    top: -4px;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background-color: rgba(225, 225, 225, 0.232234234324324);
+    border-radius: 60px;
+    opacity: 0;
+    transition: all .1s ease-in-out;
+}
+
+.box .avata:hover .overlay {
+    opacity: 1;
+}
+
+.box .content {
+    top: 70px;
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.box .content span {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.box .content p {
+    position: absolute;
+    padding: 15px 5px;
+    color: #ffffff;
+    font-size: 12px
+}
+
+.box .content h5 {
+    color: #e8d1b8;
+}
+
+.box .content #html {
+    color: red;
+}
+
+.box .content #css {
+    color: blue;
+}
+
+.box .content #js {
+    color: yellow;
+}
+
+.box .content #react {
+    color: #7272cc;
+}
+
+.box .icon_social {
+    margin-top: 125px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.box .icon_social a img {
+    margin: 5px 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.box .icon_social a img:hover {
+    opacity: 0.5;
+}
+
+.box .btn_goingToCV {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 3px;
+    background-color: transparent;
+}
+
+.box .btn_goingToCV a {
+    transition: all .4s ease-in-out;
+    text-decoration: none;
+}
+
+#more {
+    padding: 3px;
+    border: 1px solid floralwhite;
+    border-radius: 20px;
+}
+
+.box .btn_goingToCV:hover a #more {
+    color: #17bda1;
+    border: 1px solid #17bda1;
+}
+
+.zooming_avata img {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+}
+
+.zooming_avata {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+@media(max-width: 1024px) {
+    body {
+        background-image: url(./img/background/pexels-artem-saranin-1496372.jpg);
+    }
+}
